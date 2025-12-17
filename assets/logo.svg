@@ -1,0 +1,24 @@
+<svg width="240" height="60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0B2C4D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a4d7a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Globe icon -->
+  <circle cx="30" cy="30" r="18" fill="none" stroke="#FFD700" stroke-width="2"/>
+  <path d="M 30 12 Q 38 30 30 48" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+  <path d="M 30 12 Q 22 30 30 48" fill="none" stroke="#FFD700" stroke-width="1.5"/>
+  <line x1="14" y1="30" x2="46" y2="30" stroke="#FFD700" stroke-width="1.5"/>
+  <line x1="18" y1="20" x2="42" y2="20" stroke="#FFD700" stroke-width="1"/>
+  <line x1="18" y1="40" x2="42" y2="40" stroke="#FFD700" stroke-width="1"/>
+  
+  <!-- Company name -->
+  <text x="58" y="28" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">
+    H D IMPEX
+  </text>
+  <text x="58" y="45" font-family="Arial, sans-serif" font-size="9" fill="#FFD700" letter-spacing="1">
+    MERCHANT EXPORTERS
+  </text>
+</svg>
