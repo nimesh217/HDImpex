@@ -65,8 +65,8 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(135deg, rgba(11, 44, 77, 0.95), rgba(26, 77, 122, 0.9)),
-        url("https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d") center/cover;
+    background: linear-gradient(135deg, rgba(11, 44, 77, 0.85), rgba(0, 0, 0, 0.7)),
+        url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1920") center/cover;
     color: #fff;
     padding: 140px 60px;
     text-align: center;
@@ -111,7 +111,7 @@ nav a:hover {
     font-size: 48px;
     margin-bottom: 20px;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 3px 3px 8px rgba(0,0,0,0.8);
 }
 
 .hero p {
@@ -120,6 +120,7 @@ nav a:hover {
     font-size: 20px;
     font-weight: 300;
     line-height: 1.8;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
 }
 
 .cta-button {
