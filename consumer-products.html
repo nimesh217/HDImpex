@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer Goods - H D IMPEX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-new.html">
+                <img src="assets/logo.svg" alt="H D IMPEX" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index-new.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="agricultural-products.html">Agricultural Products</a></li>
+                            <li><a class="dropdown-item" href="industrial-products.html">Industrial Materials</a></li>
+                            <li><a class="dropdown-item" href="consumer-products.html">Consumer Goods</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="catalog.html"><i class="fas fa-book me-2"></i>Digital Catalog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-2">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index-new.html">Home</a></li>
+                <li class="breadcrumb-item active">Consumer Goods</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-4 bg-primary text-white">
+        <div class="container">
+            <h1><i class="fas fa-shopping-cart me-2"></i>Consumer Goods</h1>
+            <p class="lead mb-0">Wide range of consumer products for retail markets</p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <i class="fas fa-shopping-basket fa-4x text-success"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">FMCG Products</h5>
+                            <div class="product-specs mb-3">
+                                <small class="text-muted">
+                                    <strong>Category:</strong> Fast Moving | <strong>Quality:</strong> Premium
+                                </small>
+                            </div>
+                            <p class="card-text">Fast-moving consumer goods including packaged foods, beverages, and household items.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary btn-sm">View Details</button>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">Enquiry Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <i class="fas fa-tv fa-4x text-primary"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Electronic Goods</h5>
+                            <div class="product-specs mb-3">
+                                <small class="text-muted">
+                                    <strong>Type:</strong> Consumer Electronics | <strong>Warranty:</strong> Available
+                                </small>
+                            </div>
+                            <p class="card-text">Consumer electronics including home appliances and electronic accessories.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary btn-sm">View Details</button>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">Enquiry Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <i class="fas fa-tshirt fa-4x text-warning"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Textile Products</h5>
+                            <div class="product-specs mb-3">
+                                <small class="text-muted">
+                                    <strong>Material:</strong> Cotton/Synthetic | <strong>Origin:</strong> India
+                                </small>
+                            </div>
+                            <p class="card-text">Quality textile products including garments, fabrics, and home textiles.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary btn-sm">View Details</button>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">Enquiry Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Modal -->
+    <div class="modal fade" id="inquiryModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Product Inquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option>Select Country</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                                <option>UAE</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Product Requirements & Quantity"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 H D IMPEX. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

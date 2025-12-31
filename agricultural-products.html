@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Products - Premium Spices, Grains & Rice | H D IMPEX</title>
+    <meta name="description" content="Explore H D IMPEX's premium agricultural products including A-grade spices, basmati rice, grains, and organic commodities. Quality assured products for global export.">
+    <meta name="keywords" content="agricultural products, spices export, basmati rice, cumin seeds, turmeric powder, grains export, organic spices, India agricultural export">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hdimpex.com/agricultural-products.html">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-new.html">
+                <img src="assets/logo.svg" alt="H D IMPEX" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index-new.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="agricultural-products.html">Agricultural Products</a></li>
+                            <li><a class="dropdown-item" href="industrial-products.html">Industrial Materials</a></li>
+                            <li><a class="dropdown-item" href="consumer-products.html">Consumer Goods</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="catalog.html"><i class="fas fa-book me-2"></i>Digital Catalog</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-2">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index-new.html">Home</a></li>
+                <li class="breadcrumb-item active">Agricultural Products</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-4 bg-primary text-white">
+        <div class="container">
+            <h1><i class="fas fa-seedling me-2"></i>Agricultural Products</h1>
+            <p class="lead mb-0">Premium quality grains, spices, and agricultural commodities</p>
+        </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-5">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="row mb-4">
+                <div class="col-md-6 mx-auto">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="productSearch" placeholder="Search products...">
+                        <span class="input-group-text"><i class="fas fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex flex-wrap gap-2">
+                        <button class="btn btn-outline-primary active" data-category="all">All Products</button>
+                        <button class="btn btn-outline-primary" data-category="spices">Whole Spices</button>
+                        <button class="btn btn-outline-primary" data-category="powder">Powder Spices</button>
+                        <button class="btn btn-outline-primary" data-category="rice">Premium Rice</button>
+                        <button class="btn btn-outline-primary" data-category="grains">Grains</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="row g-4" id="productsGrid">
+                <!-- Whole Spices -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="spices">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <i class="fas fa-seedling fa-4x text-success"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A Grade Brown Cumin Seeds</h5>
+                            <div class="product-specs mb-3">
+                                <small class="text-muted">
+                                    <strong>Type:</strong> Seeds | <strong>Color:</strong> Brown | <strong>Grade:</strong> A
+                                </small>
+                            </div>
+                            <p class="card-text">Used whole in tempering for dals, vegetables, and curries. Essential in North Indian cuisine.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary btn-sm" onclick="openProductModal('cumin')">View Details</button>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">Enquiry Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="spices">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <i class="fas fa-leaf fa-4x text-success"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Green Cardamom</h5>
+                            <div class="product-specs mb-3">
+                                <small class="text-muted">
+                                    <strong>Type:</strong> Pods | <strong>Color:</strong> Green | <strong>Grade:</strong> Premium
+                                </small>
+                            </div>
+                            <p class="card-text">Aromatic spice used in both sweet and savory dishes. Essential for biryanis and desserts.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary btn-sm" onclick="openProductModal('cardamom')">View Details</button>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">Enquiry Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Powder Spices -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="powder">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <i class="fas fa-mortar-pestle fa-4x text-warning"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A Grade Turmeric Powder</h5>
+                            <div class="product-specs mb-3">
+                                <small class="text-muted">
+                                    <strong>Type:</strong> Powder | <strong>Color:</strong> Golden Yellow | <strong>Grade:</strong> A
+                                </small>
+                            </div>
+                            <p class="card-text">Pure turmeric powder with high curcumin content. Essential for Indian cooking and health benefits.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary btn-sm" onclick="openProductModal('turmeric')">View Details</button>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">Enquiry Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rice Products -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="rice">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <i class="fas fa-wheat-awn fa-4x text-primary"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Long Grain Basmati Rice</h5>
+                            <div class="product-specs mb-3">
+                                <small class="text-muted">
+                                    <strong>Type:</strong> Basmati | <strong>Length:</strong> Long Grain | <strong>Grade:</strong> Premium
+                                </small>
+                            </div>
+                            <p class="card-text">Aromatic long grain basmati rice perfect for biryanis and pulao. Aged for superior quality.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary btn-sm" onclick="openProductModal('basmati')">View Details</button>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">Enquiry Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grains -->
+                <div class="col-lg-4 col-md-6 product-item" data-category="grains">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <i class="fas fa-wheat-awn fa-4x text-secondary"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Golden Durum Wheat</h5>
+                            <div class="product-specs mb-3">
+                                <small class="text-muted">
+                                    <strong>Type:</strong> Durum | <strong>Color:</strong> Golden | <strong>Grade:</strong> A
+                                </small>
+                            </div>
+                            <p class="card-text">High protein durum wheat ideal for pasta and bread making. Superior quality grains.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary btn-sm" onclick="openProductModal('wheat')">View Details</button>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">Enquiry Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 product-item" data-category="grains">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center bg-light" style="height: 200px;">
+                            <i class="fas fa-seedling fa-4x text-info"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">A Grade Barley Grain</h5>
+                            <div class="product-specs mb-3">
+                                <small class="text-muted">
+                                    <strong>Type:</strong> Hulled Barley | <strong>Color:</strong> Light Brown | <strong>Grade:</strong> A
+                                </small>
+                            </div>
+                            <p class="card-text">Nutritious barley grains rich in fiber and minerals. Perfect for soups and health foods.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <button class="btn btn-primary btn-sm" onclick="openProductModal('barley')">View Details</button>
+                                <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#inquiryModal">Enquiry Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalTitle">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    <!-- Product details will be loaded here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#inquiryModal" data-bs-dismiss="modal">Enquiry Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inquiry Modal -->
+    <div class="modal fade" id="inquiryModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Product Inquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option>Select Country</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                                <option>UAE</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Product Requirements & Quantity"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send Inquiry</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 H D IMPEX. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

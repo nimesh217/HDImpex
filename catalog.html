@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalogs - Download PDF Catalogs | H D IMPEX</title>
+    <meta name="description" content="Download H D IMPEX product catalogs in PDF format. Agricultural products, industrial materials, and consumer goods catalogs with specifications and pricing.">
+    <meta name="keywords" content="product catalog, PDF catalog, agricultural catalog, industrial catalog, consumer goods catalog, product specifications, download catalog">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hdimpex.com/catalog.html">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-style.css">
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index-new.html">
+                <img src="assets/logo.svg" alt="H D IMPEX" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index-new.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="agricultural-products.html">Agricultural Products</a></li>
+                            <li><a class="dropdown-item" href="industrial-products.html">Industrial Materials</a></li>
+                            <li><a class="dropdown-item" href="consumer-products.html">Consumer Goods</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="catalog.html">Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="bg-light py-2">
+        <div class="container">
+            <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item"><a href="index-new.html">Home</a></li>
+                <li class="breadcrumb-item active">Product Catalog</li>
+            </ol>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="py-4 bg-primary text-white">
+        <div class="container">
+            <h1><i class="fas fa-book me-2"></i>Digital Product Catalog</h1>
+            <p class="lead mb-0">Browse our comprehensive product catalog</p>
+        </div>
+    </section>
+
+    <!-- Catalog Options -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-seedling fa-3x text-success mb-3"></i>
+                            <h5 class="card-title">Agricultural Products Catalog</h5>
+                            <p class="card-text">Complete catalog of spices, grains, rice, and agricultural commodities</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="openCatalog('agricultural')">View Catalog</button>
+                                <button class="btn btn-outline-success" onclick="downloadCatalog('agricultural')">
+                                    <i class="fas fa-download me-1"></i> Download PDF
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-industry fa-3x text-primary mb-3"></i>
+                            <h5 class="card-title">Industrial Materials Catalog</h5>
+                            <p class="card-text">Raw materials, chemicals, and industrial supplies catalog</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="openCatalog('industrial')">View Catalog</button>
+                                <button class="btn btn-outline-success" onclick="downloadCatalog('industrial')">
+                                    <i class="fas fa-download me-1"></i> Download PDF
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-shopping-cart fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">Consumer Goods Catalog</h5>
+                            <p class="card-text">FMCG products, electronics, and consumer items catalog</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary" onclick="openCatalog('consumer')">View Catalog</button>
+                                <button class="btn btn-outline-success" onclick="downloadCatalog('consumer')">
+                                    <i class="fas fa-download me-1"></i> Download PDF
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Viewer Modal -->
+    <div class="modal fade" id="catalogModal" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="catalogModalTitle">Product Catalog</h5>
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-light btn-sm" onclick="downloadCurrentCatalog()">
+                            <i class="fas fa-download me-1"></i> Download
+                        </button>
+                        <button class="btn btn-success btn-sm" onclick="requestCatalogViaWhatsApp()">
+                            <i class="fab fa-whatsapp me-1"></i> Request via WhatsApp
+                        </button>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                    </div>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="catalogViewer" class="w-100 h-100">
+                        <div class="d-flex justify-content-center align-items-center h-100">
+                            <div class="text-center">
+                                <div class="spinner-border text-primary" role="status">
+                                    <span class="visually-hidden">Loading...</span>
+                                </div>
+                                <p class="mt-2">Loading catalog...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Catalog Request Form -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0">Request Physical Catalog</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Get a printed catalog delivered to your address</p>
+                            <form id="catalogRequestForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label">Full Name *</label>
+                                        <input type="text" class="form-control" name="name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Company Name</label>
+                                        <input type="text" class="form-control" name="company">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Email *</label>
+                                        <input type="email" class="form-control" name="email" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label">Phone *</label>
+                                        <input type="tel" class="form-control" name="phone" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Catalog Type *</label>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="catalog[]" value="agricultural" id="agri">
+                                                    <label class="form-check-label" for="agri">Agricultural Products</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="catalog[]" value="industrial" id="industrial">
+                                                    <label class="form-check-label" for="industrial">Industrial Materials</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="catalog[]" value="consumer" id="consumer">
+                                                    <label class="form-check-label" for="consumer">Consumer Goods</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label">Delivery Address *</label>
+                                        <textarea class="form-control" name="address" rows="3" required></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Request Catalog</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Catalog Features -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="text-center mb-5">Catalog Features</h3>
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-file-pdf fa-3x text-danger mb-3"></i>
+                        <h6>PDF Format</h6>
+                        <p class="small">High-quality PDF catalogs for easy viewing and printing</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-images fa-3x text-primary mb-3"></i>
+                        <h6>High-Quality Images</h6>
+                        <p class="small">Professional product photography with detailed specifications</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-info-circle fa-3x text-success mb-3"></i>
+                        <h6>Detailed Specs</h6>
+                        <p class="small">Complete technical specifications and product information</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center">
+                        <i class="fas fa-sync fa-3x text-warning mb-3"></i>
+                        <h6>Regular Updates</h6>
+                        <p class="small">Catalogs updated regularly with new products and pricing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 H D IMPEX. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="main.js"></script>
+    <script src="catalog.js"></script>
+</body>
+</html>
